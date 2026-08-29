@@ -2,6 +2,7 @@
 
 namespace Tests\Feature;
 
+use App\Models\TriviaQuestion;
 use Database\Seeders\FriendshipSeeder;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Tests\TestCase;
@@ -42,7 +43,7 @@ class PublicPagesTest extends TestCase
 
     public function test_trivia_answers_are_graded_on_the_server(): void
     {
-        $question = \App\Models\TriviaQuestion::firstOrFail();
+        $question = TriviaQuestion::firstOrFail();
 
         $this->postJson(route('trivia.check'), [
             'question_id' => $question->id,

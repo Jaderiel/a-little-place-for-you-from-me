@@ -82,7 +82,6 @@ class PageController extends Controller
     {
         return view('pages.about', [
             'things' => ThingILike::orderBy('sort_order')->get(),
-            'song' => Song::where('is_featured', true)->first() ?? Song::first(),
         ]);
     }
 }

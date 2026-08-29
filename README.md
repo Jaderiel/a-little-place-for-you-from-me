@@ -106,7 +106,8 @@ JSON) and `relation`.
 
 ## The secret page
 
-`/secret` is not linked from any navigation, sitemap or footer. It asks for a password, compares it
+`/secret` is not in any navigation menu — the only way in is the URL itself, or the small unlabeled
+heart in the footer, which is there so the page isn't lost forever. It asks for a password, compares it
 server-side against `SECRET_PAGE_PASSWORD`, and keeps the unlock in the session only. Its content
 is never rendered — not even hidden in the HTML — until the password is correct, it is excluded
 from the service worker cache, and there is a "lock it again" button at the bottom of the page.

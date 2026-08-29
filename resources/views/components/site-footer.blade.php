@@ -6,6 +6,6 @@
     {{-- Easter egg: the only door to /secret. --}}
     <p class="mt-6 text-xs text-white/40">
         More memories to come.
-        <a href="{{ route('secret') }}" class="cursor-default text-white/40 no-underline hover:text-white/60" aria-label="🩵" title="🩵">🩵</a>
+        <a href="{{ route('secret') }}" class="cursor-default text-white/40 no-underline hover:text-white/60" aria-label="A little something else">🩵</a>
     </p>
 </footer>
